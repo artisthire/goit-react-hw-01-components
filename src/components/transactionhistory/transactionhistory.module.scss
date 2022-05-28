@@ -1,0 +1,52 @@
+@import '../variables';
+
+.transaction_history {
+  width: 100%;
+  max-width: $max-width;
+  text-align: center;
+  border-radius: 5px;
+  color: $light-grey;
+  background-color: $white;
+  box-shadow: 0 0 $shadow-blur 0 $shadow-color;
+  table-layout: fixed;
+  border-collapse: collapse;
+  overflow: hidden;
+
+  & thead th {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $white;
+    background-color: #00bcd5;
+
+    &:not(:last-child) {
+      border-right: 1px solid $white;
+    }
+  }
+
+  & tbody tr:nth-child(even) {
+    background-color: #ecf1f4;
+  }
+
+  & tbody td:not(:last-child) {
+    border-right: 1px solid $border-color;
+  }
+
+  & td,
+  & th {
+    padding: 15px 5px;
+
+    &.type {
+      padding-left: 25px;
+      text-align: left;
+    }
+  }
+
+  & td.type {
+    text-transform: capitalize;
+  }
+}
+
+.currency {
+  text-transform: uppercase;
+}

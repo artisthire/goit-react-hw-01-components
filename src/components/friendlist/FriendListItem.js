@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import s from './friendlist.module.scss';
 
-const FriendListItem = ({ avatar, name, isOnline, id }) => (
+const FriendListItem = ({ avatar, name, isOnline }) => (
   <li className={s.item}>
     <span
       className={isOnline ? `${s.status} ${s.status_online}` : `${s.status}`}
