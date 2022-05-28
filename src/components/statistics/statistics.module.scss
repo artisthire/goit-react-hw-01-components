@@ -1,0 +1,46 @@
+@import '../variables';
+
+.statistics {
+  width: 100%;
+  max-width: $max-width;
+  text-align: center;
+  color: $white;
+  background-color: $white;
+  box-shadow: 0 0 $shadow-blur 0 $shadow-color;
+}
+.title {
+  margin: 0;
+  padding: 50px 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $light-grey;
+}
+.stat_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 5px;
+  border: 1px solid $border-color;
+  background-color: #50c5f6;
+
+  &:nth-child(3n + 2) {
+    background-color: #a43cf1;
+  }
+
+  &:nth-child(3n + 3) {
+    background-color: #e44c66;
+  }
+}
+.label {
+}
+.percentage {
+  font-size: 1.2rem;
+}
