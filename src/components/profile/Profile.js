@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import s from './profile.module.scss';
+import s from './Profile.module.scss';
 
 const Profile = ({ username, location, tag, avatar, stats }) => {
   const { followers, views, likes } = stats;

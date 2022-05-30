@@ -8,39 +8,3 @@
   color: $black;
   list-style: none;
 }
-
-.item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 5px 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  background-color: $white;
-  box-shadow: 0 0 $shadow-blur 0 $shadow-color;
-  overflow: hidden;
-}
-
-.status {
-  flex-shrink: 0;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: #ff5049;
-
-  &_online {
-    background-color: #5aaa5b;
-  }
-}
-.avatar {
-  flex-shrink: 0;
-  width: 75px;
-  height: 75px;
-  border-radius: 5px;
-  object-fit: cover;
-  object-position: center;
-}
-.name {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
