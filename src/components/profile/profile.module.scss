@@ -45,7 +45,9 @@
   color: $black;
 }
 
-.tag {
+.tag::before {
+  content: '@';
+  display: inline;
 }
 
 .location {

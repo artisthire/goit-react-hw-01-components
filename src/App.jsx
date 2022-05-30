@@ -15,15 +15,13 @@ export const App = () => {
     <div className={s.app}>
       <Profile
         username={userData.username}
-        // убираем @ в теге соцсети
-        tag={userData.tag.replace('@', '')}
+        tag={userData.tag}
         location={userData.location}
         avatar={userData.avatar}
         stats={userData.stats}
       />
 
       <Statistics title="Upload stats" stats={statistics} />
-      <Statistics stats={statistics} />
 
       <FriendList friends={friends} />
 
